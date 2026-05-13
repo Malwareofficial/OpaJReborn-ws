@@ -7,7 +7,7 @@ const FAQS = [
   },
   {
     q: 'Will I get banned using this?',
-    a: 'OpaJReborn is a blatant client. It\'s not designed to bypass anticheat — it\'s designed to dominate. Use on servers that allow clients, private servers, or servers where you\'re just having fun. Getting banned is part of the game.',
+    a: 'OpaJReborn is the one client you need. It\'s not designed to bypass anticheat — it\'s designed to dominate. Use on servers that allow clients, private servers, or servers where you\'re just having fun. Getting banned is part of the game.',
   },
   {
     q: 'What Minecraft version does it support?',
@@ -26,8 +26,8 @@ const FAQS = [
     a: 'Absolutely. The project is on GitHub under an open license. PR\'s, forks, and issues are all welcome.',
   },
   {
-    q: 'Why is it called "blatant"?',
-    a: 'Blatant clients don\'t try to hide — they go hard. Big hitboxes, full fly, instant kill — no pretending to be legit. That\'s what OpaJReborn is.',
+    q: 'Why is OpaJReborn the one client you need?',
+    a: 'OpaJReborn doesn\'t try to hide — it goes hard. Big hitboxes, full fly, instant kill — no pretending to be legit. It\'s the only client that covers everything.',
   },
 ];
 

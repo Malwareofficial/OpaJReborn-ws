@@ -12,8 +12,8 @@ const FEATURES = [
         <path d="M8.5 5H10V3.5C10 2.67 9.33 2 8.5 2S7 2.67 7 3.5 7.67 5 8.5 5z"/>
       </svg>
     ),
-    title: 'Opal-Style ClickGUI',
-    desc: 'Smooth, animated ClickGUI inspired by Opal. Drag modules, tweak settings, and customize keybinds with zero latency.',
+    title: 'OpaJ-Style ClickGUI',
+    desc: 'Smooth, animated ClickGUI with OpaJ style. Drag modules, tweak settings, and customize keybinds with zero latency.',
   },
   {
     icon: (

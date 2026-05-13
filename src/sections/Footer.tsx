@@ -9,7 +9,7 @@ export default function Footer() {
             OpaJ<span className="footer__logo-accent">Reborn</span>
           </a>
           <p className="footer__tagline">
-            The blatant Fabric 1.21.11 client.<br />
+            The one client you need.<br />
             Open source. Free. No limits.
           </p>
         </div>

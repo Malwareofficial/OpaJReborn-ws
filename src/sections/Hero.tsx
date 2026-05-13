@@ -80,12 +80,12 @@ export default function Hero() {
         </div>
 
         <h1 className="hero__title">
-          The <span className="hero__title-gradient">Blatant</span><br />
-          Fabric Client
+          The One Client<br />
+          <span className="hero__title-gradient">You Need</span>
         </h1>
 
         <p className="hero__sub">
-          OpaJReborn brings Opal-style ClickGUI, top-tier combat modules, and smooth visuals
+          OpaJReborn brings a sleek OpaJ-style ClickGUI, top-tier combat modules, and smooth visuals
           to Minecraft 1.21.11 Fabric. No compromises.
         </p>
 

@@ -57,7 +57,7 @@ export default function ClickGUI() {
       <div className="container">
         <div className="section-header">
           <span className="section-label">ClickGUI Preview</span>
-          <h2 className="section-title">Opal-Style Interface</h2>
+          <h2 className="section-title">OpaJ-Style Interface</h2>
           <p className="section-sub">
             A sleek, animated GUI that stays out of your way. Click modules, adjust values — all in-game.
           </p>
