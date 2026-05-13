@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "id":          "opajreborn",
+  "version":     "${version}",
+  "name":        "OpaJReborn",
+  "description": "The blatant Fabric 1.21.11 client.",
+  "authors":     ["opaJReborn"],
+  "contact": {
+    "sources": "https://github.com/opaJReborn/opaJReborn"
+  },
+  "license": "MIT",
+  "environment": "client",
+  "entrypoints": {
+    "main":   ["dev.opajreborn.OpaJReborn"],
+    "client": ["dev.opajreborn.OpaJReborn"]
+  },
+  "depends": {
+    "fabricloader": ">=0.16.0",
+    "minecraft":    "1.21.x",
+    "java":         ">=21",
+    "fabric-api":   "*"
+  }
+}
