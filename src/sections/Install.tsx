@@ -99,7 +99,12 @@ export default function Install() {
           text-align: center;
           padding: 0 16px;
           position: relative;
+          animation: fadeInUp 0.6s ease-out both;
         }
+        .install-step:nth-child(1) { animation-delay: 0.1s; }
+        .install-step:nth-child(2) { animation-delay: 0.2s; }
+        .install-step:nth-child(3) { animation-delay: 0.3s; }
+        .install-step:nth-child(4) { animation-delay: 0.4s; }
         .install-step__connector {
           position: absolute;
           top: 32px;
@@ -127,6 +132,12 @@ export default function Install() {
           flex-shrink: 0;
           position: relative;
           z-index: 1;
+          animation: fadeInScale 0.6s ease-out both;
+          transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.3s ease;
+        }
+        .install-step:hover .install-step__num {
+          transform: scale(1.1);
+          box-shadow: 0 0 40px rgba(0, 194, 255, 0.5);
         }
         .install-step__content { display: flex; flex-direction: column; align-items: center; gap: 10px; }
         .install-step__title {
@@ -146,14 +157,18 @@ export default function Install() {
           color: var(--primary-500);
           font-size: 13px;
           font-weight: 600;
-          transition: color 0.2s;
+          transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
         }
-        .install-step__link:hover { color: var(--primary-300); }
+        .install-step__link:hover {
+          color: var(--primary-300);
+          transform: translateX(4px);
+        }
         .install__cta {
           display: flex;
           gap: 16px;
           justify-content: center;
           flex-wrap: wrap;
+          animation: fadeInUp 0.8s ease-out 0.4s both;
         }
         @media (max-width: 900px) {
           .install__grid { grid-template-columns: repeat(2, 1fr); gap: 32px; }

@@ -105,9 +105,13 @@ export default function Footer() {
         .footer__links-group a {
           font-size: 14px;
           color: var(--text-muted);
-          transition: color 0.2s;
+          transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+          position: relative;
         }
-        .footer__links-group a:hover { color: var(--primary-400); }
+        .footer__links-group a:hover {
+          color: var(--primary-400);
+          transform: translateX(4px);
+        }
         .footer__bottom {
           display: flex;
           align-items: center;
@@ -122,10 +126,13 @@ export default function Footer() {
         .footer__socials { display: flex; gap: 16px; }
         .footer__social-link {
           color: var(--text-muted);
-          transition: color 0.2s, transform 0.2s;
+          transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
           display: flex;
         }
-        .footer__social-link:hover { color: var(--primary-500); transform: translateY(-2px); }
+        .footer__social-link:hover {
+          color: var(--primary-500);
+          transform: translateY(-4px) scale(1.15);
+        }
         @media (max-width: 768px) {
           .footer__inner { grid-template-columns: 1fr 1fr; }
           .footer__brand { grid-column: 1 / -1; }

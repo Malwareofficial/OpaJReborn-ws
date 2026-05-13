@@ -126,9 +126,26 @@ export default function Navbar() {
           color: var(--text-secondary);
           font-size: 14px;
           font-weight: 500;
-          transition: color 0.2s;
+          transition: color 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+          position: relative;
+          padding-bottom: 4px;
         }
-        .navbar__link:hover { color: var(--text-primary); }
+        .navbar__link::after {
+          content: '';
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 0;
+          height: 2px;
+          background: var(--primary-600);
+          transition: width 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+        }
+        .navbar__link:hover {
+          color: var(--primary-400);
+        }
+        .navbar__link:hover::after {
+          width: 100%;
+        }
         .navbar__burger {
           display: none;
           flex-direction: column;
@@ -145,7 +162,10 @@ export default function Navbar() {
           height: 2px;
           background: var(--text-primary);
           border-radius: 2px;
-          transition: 0.2s;
+          transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+        }
+        .navbar__burger:hover span {
+          background: var(--primary-500);
         }
         .navbar__mobile {
           display: flex;
@@ -190,8 +210,11 @@ export default function Navbar() {
         }
         .btn--primary:hover {
           background: var(--primary-400);
-          box-shadow: var(--glow-primary);
-          transform: translateY(-1px);
+          box-shadow: 0 0 24px rgba(0, 194, 255, 0.5);
+          transform: translateY(-2px);
+        }
+        .btn--primary:active {
+          transform: translateY(0);
         }
         .btn--ghost {
           background: var(--bg-500);

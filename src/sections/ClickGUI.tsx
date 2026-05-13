@@ -150,6 +150,12 @@ export default function ClickGUI() {
           box-shadow: 0 32px 80px rgba(0, 0, 0, 0.6), var(--glow-primary);
           max-width: 900px;
           margin: 0 auto;
+          animation: fadeInScale 0.8s ease-out both;
+          transition: box-shadow 0.3s ease, border-color 0.3s ease;
+        }
+        .gui-demo:hover {
+          border-color: rgba(0, 194, 255, 0.4);
+          box-shadow: 0 32px 80px rgba(0, 0, 0, 0.6), var(--glow-primary-strong);
         }
         .gui-demo__chrome {
           background: var(--bg-600);
@@ -200,9 +206,9 @@ export default function ClickGUI() {
           cursor: pointer;
           font-family: var(--font-sans);
           text-align: left;
-          transition: all 0.15s;
+          transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
         }
-        .gui-cat:hover { background: var(--bg-500); color: var(--text-primary); }
+        .gui-cat:hover { background: var(--bg-500); color: var(--text-primary); transform: translateX(4px); }
         .gui-cat--active { background: rgba(0, 194, 255, 0.12); color: var(--primary-400); }
         .gui-cat__dot {
           width: 6px;
@@ -247,11 +253,11 @@ export default function ClickGUI() {
           padding: 9px 12px;
           border-radius: var(--radius-md);
           cursor: pointer;
-          transition: background 0.15s;
+          transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
           border: 1px solid transparent;
           user-select: none;
         }
-        .gui-module:hover { background: var(--bg-600); }
+        .gui-module:hover { background: var(--bg-600); transform: translateX(4px); }
         .gui-module--on {
           background: rgba(0, 194, 255, 0.06);
           border-color: rgba(0, 194, 255, 0.15);

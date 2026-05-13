@@ -178,6 +178,7 @@ export default function Hero() {
           color: var(--primary-400);
           letter-spacing: 0.05em;
           text-transform: uppercase;
+          animation: fadeInDown 0.8s ease-out 0.2s both;
         }
         .hero__badge-dot {
           width: 6px;
@@ -196,6 +197,7 @@ export default function Hero() {
           font-weight: 900;
           letter-spacing: -0.03em;
           line-height: 1.05;
+          animation: fadeInScale 0.8s ease-out 0.4s both;
         }
         .hero__title-gradient {
           background: linear-gradient(135deg, var(--primary-600), var(--primary-300));
@@ -208,12 +210,14 @@ export default function Hero() {
           color: var(--text-secondary);
           max-width: 560px;
           line-height: 1.6;
+          animation: fadeInUp 0.8s ease-out 0.6s both;
         }
         .hero__cta {
           display: flex;
           gap: 16px;
           flex-wrap: wrap;
           justify-content: center;
+          animation: fadeInUp 0.8s ease-out 0.8s both;
         }
         .hero__stats {
           display: flex;
@@ -222,6 +226,7 @@ export default function Hero() {
           margin-top: 16px;
           flex-wrap: wrap;
           justify-content: center;
+          animation: fadeInUp 0.8s ease-out 1s both;
         }
         .hero__stat {
           display: flex;

@@ -70,11 +70,18 @@ export default function Modules() {
           border: 1px solid var(--neutral-700);
           border-radius: var(--radius-xl);
           padding: 24px;
-          transition: border-color 0.2s, transform 0.2s;
+          transition: border-color 0.3s cubic-bezier(0.34, 1.56, 0.64, 1), transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.3s ease;
+          animation: fadeInScale 0.6s ease-out both;
         }
+        .module-cat-card:nth-child(1) { animation-delay: 0.1s; }
+        .module-cat-card:nth-child(2) { animation-delay: 0.2s; }
+        .module-cat-card:nth-child(3) { animation-delay: 0.3s; }
+        .module-cat-card:nth-child(4) { animation-delay: 0.4s; }
+        .module-cat-card:nth-child(5) { animation-delay: 0.5s; }
         .module-cat-card:hover {
           border-color: var(--cat-color);
-          transform: translateY(-4px);
+          transform: translateY(-8px);
+          box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4), 0 0 20px rgba(0,0,0,0.2);
         }
         .module-cat-card__header {
           display: flex;
@@ -120,9 +127,12 @@ export default function Modules() {
           gap: 8px;
           font-size: 13px;
           color: var(--text-secondary);
-          transition: color 0.15s;
+          transition: color 0.3s cubic-bezier(0.34, 1.56, 0.64, 1), transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
         }
-        .module-cat-card:hover .module-cat-card__item { color: var(--text-primary); }
+        .module-cat-card:hover .module-cat-card__item {
+          color: var(--text-primary);
+          transform: translateX(4px);
+        }
         .module-cat-card__item-dot {
           width: 4px;
           height: 4px;

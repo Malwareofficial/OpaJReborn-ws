@@ -100,6 +100,7 @@ export default function Features() {
           flex-direction: column;
           align-items: center;
           gap: 16px;
+          animation: fadeInUp 0.8s ease-out both;
         }
         .section-label {
           font-size: 12px;
@@ -129,13 +130,20 @@ export default function Features() {
           border: 1px solid var(--neutral-700);
           border-radius: var(--radius-xl);
           padding: 32px;
-          transition: border-color 0.2s, transform 0.2s, box-shadow 0.2s;
+          transition: border-color 0.3s cubic-bezier(0.34, 1.56, 0.64, 1), transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
           cursor: default;
+          animation: fadeInScale 0.6s ease-out both;
         }
+        .feature-card:nth-child(1) { animation-delay: 0.1s; }
+        .feature-card:nth-child(2) { animation-delay: 0.2s; }
+        .feature-card:nth-child(3) { animation-delay: 0.3s; }
+        .feature-card:nth-child(4) { animation-delay: 0.4s; }
+        .feature-card:nth-child(5) { animation-delay: 0.5s; }
+        .feature-card:nth-child(6) { animation-delay: 0.6s; }
         .feature-card:hover {
           border-color: rgba(0, 194, 255, 0.35);
-          transform: translateY(-4px);
-          box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4), var(--glow-primary);
+          transform: translateY(-8px);
+          box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4), var(--glow-primary-strong);
         }
         .feature-card__icon {
           width: 48px;
@@ -147,6 +155,10 @@ export default function Features() {
           justify-content: center;
           color: var(--primary-500);
           margin-bottom: 20px;
+          transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+        }
+        .feature-card:hover .feature-card__icon {
+          transform: translateY(-4px) scale(1.1);
         }
         .feature-card__title {
           font-size: 18px;
